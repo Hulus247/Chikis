@@ -12,22 +12,31 @@
       box-sizing: border-box;
     }
 
-    html, body {
+    html,
+    body {
       width: 100%;
       height: 100%;
       overflow: hidden;
+      background: #000;
     }
 
-    a {
-      display: block;
+    .landing-page {
       width: 100vw;
       height: 100vh;
     }
 
-    img {
+    .landing-page a {
+      display: flex;
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .landing-page img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
       display: block;
       cursor: pointer;
     }
@@ -36,9 +45,14 @@
 
 <body>
 
-  <a href="https://aurthurhub.blogspot.com/2026/09/viralhub247.html">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUNAUciy45wPcNu9bUYQsYbFf2BrDUVIl0fxdIY0NgrA&s=10" alt="Landing Page">
-  </a>
+  <div class="landing-page">
+    <a href="https://aurthurhub.blogspot.com/2026/09/viralhub247.html">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUNAUciy45wPcNu9bUYQsYbFf2BrDUVIl0fxdIY0NgrA&s=10"
+        alt="Landing Page"
+      >
+    </a>
+  </div>
 
 </body>
 </html>
